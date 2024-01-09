@@ -1,0 +1,153 @@
+.contacts {
+  padding-top: 60px;
+}
+
+.contacts__title {
+  margin-bottom: 50px;
+}
+
+.contacts__wrap {
+  box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.10);
+}
+
+.contacts__container {
+  display: flex;
+  align-items: center;
+  max-width: none;
+  padding-left: max(72px, calc((100% - 1180px) / 2));
+  padding-right: 0;
+}
+
+.contacts__address {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  width: 380px;
+  font-style: normal;
+}
+
+.contacts__address p {
+  color: var(--second-color);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  width: fit-content;
+  color: var(--second-color);
+  transition: color .3s ease;
+}
+
+.contacts__link svg {
+  color: var(--main-bg-color);
+  transition: color .3s ease;
+}
+
+.contacts__link:hover,
+.contacts__link:hover svg {
+  color: var(--green-bg-color);
+}
+
+.contacts__social {
+  display: flex;
+  gap: 30px;
+}
+
+.contacts__social-link {
+  color: var(--main-bg-color);
+  transition: color .3s ease;
+}
+
+.contacts__social-link:hover {
+  color: var(--green-bg-color);
+}
+
+.contacts__map-wrapper {
+  flex-shrink: 1;
+  width: calc(100% - 380px);
+  height: 386px;
+}
+
+.contacts__map {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1200px) {
+  .contacts {
+    padding-top: 40px;
+  }
+
+  .contacts__title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .contacts__container {
+    padding-left: max(29px, calc((100% - 1180px) / 2));
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 940px) {
+  .contacts {
+    padding-top: 25px;
+  }
+
+  .contacts__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .contacts__address {
+    gap: 15px;
+    width: 260px;
+  }
+
+  .contacts__address p {
+    font-size: 16px;
+  }
+
+  .contacts__list {
+    gap: 10px;
+  }
+
+  .contacts__link {
+    font-size: 14px;
+  }
+
+  .contacts__map-wrapper {
+    width: calc(100% - 260px);
+  }
+
+  .contacts__social {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contacts__container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .contacts__address {
+    width: 100%;
+    padding: 30px 15px;
+  }
+
+  .contacts__map-wrapper {
+    width: 100%;
+  }
+}

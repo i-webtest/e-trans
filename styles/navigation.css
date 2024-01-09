@@ -1,0 +1,39 @@
+.navigation__list {
+  display: flex;
+  gap: 40px;
+}
+
+.navigation__link {
+  outline: 2px solid transparent;
+  transition: color .3s ease;
+}
+
+.navigation__link:hover {
+  color: var(--green-bg-color);
+}
+
+.navigation__link:focus {
+  outline-color: var(--main-bg-color);
+}
+
+@media (max-width: 1200px) {
+  .navigation__list {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 940px) {
+  .navigation__list {
+    gap: 15px;
+  }
+
+  .navigation__link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navigation__link {
+    font-size: 12px;
+  }
+}

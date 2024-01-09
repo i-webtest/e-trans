@@ -1,0 +1,11 @@
+@import 'normalize.css';
+@import 'default.css';
+@import 'fonts.css';
+@import 'variable.css';
+@import 'header.css';
+@import 'hero.css';
+@import 'navigation.css';
+@import 'product.css';
+@import 'contacts.css';
+@import 'footer.css';
+@import 'modal.css';
